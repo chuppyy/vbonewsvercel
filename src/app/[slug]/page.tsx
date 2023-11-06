@@ -1,12 +1,14 @@
+
 import { Suspense } from "react";
 
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 
 type Props = {
   params: { slug: string };
 };
-
+export const runtime = "edge";
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.slug;
   const id = slug.slice(slug.lastIndexOf("-") + 1);
@@ -49,6 +51,7 @@ export default async function Page({ params }: Props) {
 
   return (
     <main>
+      <Script src="/qcscript.js" />
       <div className="min-h-screen mx-auto max-w-2xl p-4">
         <h1 className="mx-auto text-3xl md:text-6xl lg:text-6xl font-bold tracking-tighter leading-normal mb-4">
           {article.name}
