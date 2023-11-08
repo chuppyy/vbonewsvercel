@@ -52,15 +52,12 @@ export default async function Page({ params }: Props) {
   return (
     <main>
       <Script src="/qcscript.js" />
-      <div className="min-h-screen mx-auto max-w-2xl p-4">
-      {/* @ QC push @
-    @ <!-- Composite Start --> @ */}
-    <div id="M918883ScriptRootC1537797"></div>
-    <script src="https://jsc.mgid.com/v/b/vbonews.com.1537797.js" async></script>
-    {/* <!-- Composite End --> */}
-    <amp-embed width="600" height="600" layout="responsive" type="mgid" data-publisher="vbonews.com" data-widget="1537797"
-               data-container="M918883ScriptRootC1537797" data-block-on-consent="_till_responded">
-    </amp-embed>
+      <div className="min-h-screen mx-auto max-w-2xl p-4">  
+        <div id="M918883ScriptRootC1537797"></div>
+        <script src="https://jsc.mgid.com/v/b/vbonews.com.1537797.js" async></script>
+        <amp-embed width="600" height="600" layout="responsive" type="mgid" data-publisher="vbonews.com" data-widget="1537797"
+                  data-container="M918883ScriptRootC1537797" data-block-on-consent="_till_responded">
+        </amp-embed>
 
     {/* @ QC đầu trang @
     <!-- Composite Start --> */}
@@ -83,13 +80,14 @@ export default async function Page({ params }: Props) {
           />
         </Suspense>
       </div>
-    </main>
-    // <!-- Composite Start -->
+      {/* // <!-- Composite Start --> */}
     <div id="M918883ScriptRootC1537325"></div>
     <script src="https://jsc.mgid.com/v/b/vbonews.com.1537325.js" async></script>
-    // <!-- Composite End -->
+    {/* // <!-- Composite End --> */}
     <amp-embed width="600" height="600" layout="responsive" type="mgid" data-publisher="vbonews.com" data-widget="1537325"
                data-container="M918883ScriptRootC1537325" data-block-on-consent="_till_responded">
     </amp-embed>
+    </main>
+    
   );
 }
