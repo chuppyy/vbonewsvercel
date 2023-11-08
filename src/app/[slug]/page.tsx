@@ -52,21 +52,17 @@ export default async function Page({ params }: Props) {
   return (
     <main>
       <Script src="/qcscript.js" />
-      <div className="min-h-screen mx-auto max-w-2xl p-4">  
+      <div className="min-h-screen mx-auto max-w-2xl p-4">
         <div id="M918883ScriptRootC1537797"></div>
         <script src="https://jsc.mgid.com/v/b/vbonews.com.1537797.js" async></script>
-        <amp-embed width="600" height="600" layout="responsive" type="mgid" data-publisher="vbonews.com" data-widget="1537797"
-                  data-container="M918883ScriptRootC1537797" data-block-on-consent="_till_responded">
-        </amp-embed>
+        
 
-    {/* @ QC đầu trang @
+        {/* @ QC đầu trang @
     <!-- Composite Start --> */}
-    <div id="M918883ScriptRootC1537328"></div>
-    <script src="https://jsc.mgid.com/v/b/vbonews.com.1537328.js" async></script>
-    {/* <!-- Composite End --> */}
-    <amp-embed width="600" height="600" layout="responsive" type="mgid" data-publisher="vbonews.com" data-widget="1537328"
-               data-container="M918883ScriptRootC1537328" data-block-on-consent="_till_responded">
-    </amp-embed>
+        <div id="M918883ScriptRootC1537328"></div>
+        <script src="https://jsc.mgid.com/v/b/vbonews.com.1537328.js" async></script>
+        {/* <!-- Composite End --> */}
+        
         <h1 className="mx-auto text-3xl md:text-6xl lg:text-6xl font-bold tracking-tighter leading-normal mb-4">
           {article.name}
         </h1>
@@ -81,13 +77,11 @@ export default async function Page({ params }: Props) {
         </Suspense>
       </div>
       {/* // <!-- Composite Start --> */}
-    <div id="M918883ScriptRootC1537325"></div>
-    <script src="https://jsc.mgid.com/v/b/vbonews.com.1537325.js" async></script>
-    {/* // <!-- Composite End --> */}
-    <amp-embed width="600" height="600" layout="responsive" type="mgid" data-publisher="vbonews.com" data-widget="1537325"
-               data-container="M918883ScriptRootC1537325" data-block-on-consent="_till_responded">
-    </amp-embed>
+      <div id="M918883ScriptRootC1537325"></div>
+      <script src="https://jsc.mgid.com/v/b/vbonews.com.1537325.js" async></script>
+      {/* // <!-- Composite End --> */}
+      
     </main>
-    
+
   );
 }
