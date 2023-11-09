@@ -26,6 +26,17 @@ export default function RootLayout({
 
           gtag('config', 'G-FC51BKFSV2');
         </Script> */}
+
+<Script src="https://www.googletagmanager.com/gtag/js?id=FC51BKFSV2" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'FC51BKFSV2');
+        `}
+      </Script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>
