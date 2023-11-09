@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Script from "next/script";
+// import Script from "next/script";
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -18,14 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FC51BKFSV2"></script>
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-FC51BKFSV2"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', 'G-FC51BKFSV2');
-        </script>
+        </script> */}
       </head>
       <body className={inter.className}>{children}</body>
     </html>
